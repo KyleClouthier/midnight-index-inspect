@@ -1,0 +1,7 @@
+.venv/
+logs/
+__pycache__/
+*.egg-info/
+.env
+run_deepseek.py
+logs_test.txt

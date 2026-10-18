@@ -1,0 +1,24 @@
+[project]
+name = "midnight-index-inspect"
+version = "0.1.0"
+description = "The Midnight Index as an Inspect eval: models command a nation in a real-time world war with a nuclear doomsday clock (SECOND STRIKE)."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Kyle Clouthier", email = "kyle@simgen.dev" }]
+requires-python = ">=3.10"
+dependencies = ["inspect_ai>=0.3.200", "httpx>=0.27"]
+
+[project.urls]
+Homepage = "https://secondstrike.io/midnight"
+Paper = "https://doi.org/10.5281/zenodo.23452303"
+Source = "https://github.com/KyleClouthier/midnight-index-inspect"
+
+[project.entry-points.inspect_ai]
+midnight_index = "midnight_index._registry"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["midnight_index"]
